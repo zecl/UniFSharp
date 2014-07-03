@@ -1,0 +1,40 @@
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+x64/
+[Bb]uild/
+[Bb]in/
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+
+# Document
+docs/output/
+
+# NuGet package
+packages/
+nuget/*.nupkg
+
+# Others
+*.dtd
+
+# Unity
+#/*.csproj
+#/*.sln
+/*.unityproj
+/*.suo
+/*.user
+/*.userprefs
+/*.pidb
+/*.booproj
