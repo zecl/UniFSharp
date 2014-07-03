@@ -18,14 +18,8 @@ F#(関数型プログラミング言語)でUnityのゲーム開発がしやすくなります。
 
 Movie
 ---
-<div style="text-align:center;">
-  <object width="560" height="315">
-      <param name="movie" value="https://www.youtube.com/embed/htPJ8R5V4_A"></param>
-      <embed src="https://www.youtube.com/embed/htPJ8R5V4_A" width="560" height="315" />
-      <noembed>プラグインが必要です。</noembed>
-  </object><br>
-  ※動画はベータ版時のものです
-</div>
+<iframe width="420" height="315" src="//www.youtube.com/embed/htPJ8R5V4_A" frameborder="0" allowfullscreen></iframe>
+※動画はベータ版時のものです
 
 
 
