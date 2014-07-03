@@ -38,3 +38,7 @@ nuget/*.nupkg
 /*.userprefs
 /*.pidb
 /*.booproj
+
+# UniFSharp
+!DTE.exe
+!GN_merge.exe
