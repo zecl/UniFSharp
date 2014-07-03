@@ -1,0 +1,5 @@
+﻿namespace #RootNamespace#
+open UnityEngine
+
+module #ModuleName# =
+    let dummy () = "dummy..." |> Debug.Log

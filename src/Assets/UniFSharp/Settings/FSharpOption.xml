@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FSharpOption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <foldoutIDE>true</foldoutIDE>
+  <monoVersion>MonoDevelopBuiltIn</monoVersion>
+  <vsVersion>Vs2013</vsVersion>
+  <foldoutFsprojDetail>false</foldoutFsprojDetail>
+  <netFramework>Net35</netFramework>
+  <fsharpCoreVersion>FSharpCore2300</fsharpCoreVersion>
+  <assemblyName>AssemblyFSharp</assemblyName>
+  <rootNameSpace>AssemblyFSharp</rootNameSpace>
+  <assemblyNameEditor>AssemblyFSharpEditor</assemblyNameEditor>
+  <rootNameSpaceEditor>AssemblyFSharpEditor</rootNameSpaceEditor>
+  <msBuildVersion>V40</msBuildVersion>
+  <foldoutOther>true</foldoutOther>
+  <buildLogConsoleOutput>false</buildLogConsoleOutput>
+  <assemblySearch>Simple</assemblySearch>
+</FSharpOption>

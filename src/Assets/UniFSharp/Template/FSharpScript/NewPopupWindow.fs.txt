@@ -1,0 +1,21 @@
+﻿namespace #RootNamespace#
+open UnityEditor
+open UnityEngine
+
+[<AllowNullLiteral>]
+type public #ClassName# () =
+  inherit EditorWindow ()
+  static let mutable window : #ClassName# = null
+
+  [<MenuItem("NewMenu/#ClassName# Open...", false, 10)>]
+  static member ShowWindow() = 
+    UnityEditor.EditorWindow.GetWindow<#ClassName#>().Close() |> ignore
+    window <- ScriptableObject.CreateInstance<#ClassName#>()
+    window.ShowPopup ()
+
+  member this.OnGUI() =
+    let evt = Event.current
+    if (evt.keyCode = KeyCode.Escape  && evt.``type`` = EventType.KeyDown) then
+      window.Close ()
+    if GUILayout.Button("Close") then 
+      window.Close ()

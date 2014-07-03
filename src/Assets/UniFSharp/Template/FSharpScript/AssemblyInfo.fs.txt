@@ -1,0 +1,34 @@
+module #ModuleName#
+
+open System.Resources
+open System.Reflection
+open System.Runtime.CompilerServices
+open System.Runtime.InteropServices
+
+[<assembly: AssemblyVersion("1.0.0")>]
+[<assembly: AssemblyFileVersion("1.0.0")>]
+[<assembly: AssemblyInformationalVersion("1.0.0")>]
+
+[<assembly: AssemblyTitle("#AssemblyName#")>]
+[<assembly: AssemblyDescription("#AssemblyName#")>]
+[<assembly: AssemblyCompany("")>]
+[<assembly: AssemblyProduct("#AssemblyName#")>]
+[<assembly: AssemblyCopyright("Copyright (C) 2014")>]
+[<assembly: AssemblyTrademark("")>]
+[<assembly: AssemblyCulture("")>]
+[<assembly: NeutralResourcesLanguage("ja-JP")>]
+
+[<assembly: ComVisible(false)>]
+[<assembly: Guid("#Guid#")>]
+
+#if DEBUG
+[<assembly: InternalsVisibleTo("#AssemblyName#.Test")>]
+#endif
+
+#if DEBUG
+[<assembly: AssemblyConfiguration("Debug")>]
+#else
+[<assembly: AssemblyConfiguration("Release")>]
+#endif
+
+do()

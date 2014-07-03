@@ -1,0 +1,8 @@
+﻿namespace #RootNamespace#
+open UnityEngine
+
+type #ClassName# () =
+    inherit MonoBehaviour()
+    [<DefaultValue>] val mutable text : string
+    member public this.Start () = "start..." |> Debug.Log
+    member public this.Update () = "update..." + this.text |> Debug.Log

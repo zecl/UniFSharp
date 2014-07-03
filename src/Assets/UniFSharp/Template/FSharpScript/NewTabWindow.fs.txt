@@ -1,0 +1,14 @@
+﻿namespace #RootNamespace#
+open UnityEditor
+open UnityEngine
+
+type public #ClassName# () =
+  inherit EditorWindow ()
+
+  [<MenuItem("NewMenu/#ClassName# Open...", false, 10)>]
+  static member ShowWindow() = 
+    let window = UnityEditor.EditorWindow.GetWindow<#ClassName#>()
+    window.ShowTab()
+
+  member this.OnGUI() =
+    if GUILayout.Button("Button") then "Hello,F#!" |> Debug.Log

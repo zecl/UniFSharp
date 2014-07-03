@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{22a027f0-d2d7-4aa5-81dd-9db07268bc65}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UniFSharp</RootNamespace>
+    <AssemblyName>UniFSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>C:/Code/Unity/Editor/FSharp/Assets/Assembly-FSharp-Editor/</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget />
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>C:/Code/Unity/Editor/FSharp/Assets/Assembly-FSharp-Editor/</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <Tailcalls>true</Tailcalls>
+    <ConsolePause>False</ConsolePause>
+    <PlatformTarget />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\AssemblyInfo.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\CustomProjectView.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\FSharpBuildTools.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\FSharpMenuItem.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\FSharpProject.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\FSharpScriptAssetPostprocessor.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\FSharpScriptCreateAsset.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\FSharpSolution.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\MoreFSharpScriptWindow.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\UnityEditorBehaviour.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\Option\FSharpBuildToolsWindow.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\Option\FSharpOption.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\Option\NotificationWindow.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\Option\UnityChanOption.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\Utils\AliasNameAttribute.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\Utils\AudioUtil.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\Utils\DayInfoUtil.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\Utils\MSBuild.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\Utils\PathUtil.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\Utils\Registory.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\Utils\SerializerUtil.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\Utils\UnityChan.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\Utils\DisposableBuilder.fs" />
+    <Compile Include="Assets\UniFSharp\Editor\FSharp\Utils\Voices.fs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,27 @@
+﻿namespace #RootNamespace#
+open System
+open UnityEditor
+open UnityEngine
+
+type public #ClassName# () =
+  inherit ScriptableWizard ()
+  [<DefaultValue>] val mutable objectName : String
+
+  [<MenuItem("GameObject/#ClassName# CreateWizard", false, 10)>]
+  static member CreateWizard () = 
+    ScriptableWizard.DisplayWizard<#ClassName#>("Create Object", "Create") |> ignore
+
+  member this.OnWizardCreate () =
+    let obj = new GameObject (ObjectNames.NicifyVariableName (this.objectName), this.AddComponents())
+    let prefab = PrefabUtility.CreatePrefab (String.Format ("Assets/{0}.prefab", obj.name), obj)
+    ScriptableWizard.DestroyImmediate (obj)
+    PrefabUtility.InstantiatePrefab (prefab)
+
+  member this.OnWizardUpdate () =
+    this.isValid <- not <| String.IsNullOrEmpty (this.objectName)
+
+  member this.AddComponents () =
+    seq { 
+      yield typeof<BoxCollider> 
+      yield typeof<Rigidbody> 
+    } |> Seq.toArray 

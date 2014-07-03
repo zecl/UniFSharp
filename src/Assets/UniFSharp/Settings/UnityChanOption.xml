@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UnityChanOption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <startingVoice>true</startingVoice>
+  <buildVoice>true</buildVoice>
+  <progressVoice>true</progressVoice>
+  <progressInterval>30</progressInterval>
+  <timeSignalVoice>true</timeSignalVoice>
+  <eventVoice>true</eventVoice>
+  <birthday>1978/07/04</birthday>
+</UnityChanOption>
